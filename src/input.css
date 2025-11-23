@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@theme {
+    --color-primary: #800080;
+    --color-gray: #ffffff1a;
+    --color-white-2: #f8f8f8;
+}
+
+.center-container {
+    @apply container mx-auto px-5 w-[70%] max-[700px]:w-full;
+}
+
+.main-title {
+    @apply font-bold text-3xl border-b-2 border-solid border-primary w-fit pb-3 mx-auto mb-8
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+section#services,
+section#courses, 
+section#about,
+section#contact {
+    @apply py-12;
+}
+
+.footer-grid {
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+}
